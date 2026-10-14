@@ -159,7 +159,8 @@
 .hover-template:hover .hover-image {
     transform: scale(1.08);
     filter:
-        drop-shadow(0 0 5px #ff667f)
-        drop-shadow(0 0 5px #F7374F)
-        drop-shadow(0 0 5px #88304E);
+        drop-shadow(0 0 8px #ff667f)
+        drop-shadow(0 0 18px #F7374F)
+        drop-shadow(0 0 35px #88304E)
+        drop-shadow(0 0 50px #800000);
 }
