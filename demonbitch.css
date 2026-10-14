@@ -109,15 +109,33 @@
     left: 10px;
     top: 0;
     margin-bottom: 0;
+
     font-size: 70px !important;
     font-family: "Island Moments", cursive;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 8px !important;
-    color: #330000;
-    background: linear-gradient(to right, #e666ff, #c400cc, #880099, #2f021b);
+
+    background-image: url("https://cdn.pixabay.com/photo/2017/02/13/21/07/background-2063797_1280.jpg");
+    background-size: 200% auto;
+    background-position: 0% center;
+    background-repeat: repeat-x;
+
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    animation: titleImageMove 12s linear infinite;
+}
+
+@keyframes titleImageMove {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: 200% center;
+    }
 }
 
 .hover-template:hover .hover-content {
