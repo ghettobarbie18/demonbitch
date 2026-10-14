@@ -107,12 +107,14 @@
     pointer-events: none;
 }
 
-
 .hover-title {
     position: relative;
-    left: 10px;
+    left: 0;
     top: 0;
     margin-bottom: 0;
+
+    width: 100%;
+    text-align: center;
 
     font-size: 70px !important;
     font-family: "Island Moments", cursive;
@@ -120,26 +122,22 @@
     font-style: normal;
     letter-spacing: 8px !important;
 
+    /* Image background */
     background-image: url("https://cdn.pixabay.com/photo/2017/02/13/21/07/background-2063797_1280.jpg");
-    background-size: 200% auto;
-    background-position: 0% center;
-    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* Center the text vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    animation: titleImageMove 12s linear infinite;
-}
+    /* Text color */
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
 
-@keyframes titleImageMove {
-    from {
-        background-position: 0% center;
-    }
-
-    to {
-        background-position: 200% center;
-    }
+    min-height: 120px;
 }
 
 .hover-template:hover .hover-content {
