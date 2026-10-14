@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Metal+Mania&family=Caudex&family=Nosifer&family=Cormorant+Unicase:wght@300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delicacy Template</title>
+
+<style>
+.hover-template {
+    width: 500px;
+    height: 490px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-template::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 3px;
+    background: linear-gradient(
+        135deg,
+        #3c1516,
+        #b97176,
+        #7f2c32,
+        #9d1b22
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    box-shadow:
+    0 0 10px #ec6666,
+    0 0 30px #800000,
+    10px 10px 10px rgba(0,0,0,.7);
+}
+
+.hover-image {
+    width: 100%;
+    height: 100%;
+    background: url("https://raw.githubusercontent.com/ghettobarbie18/delicacy/refs/heads/main/val.jpg") center / cover no-repeat;
+    transition: .5s ease;
+}
+
+.hover-content { 
+    position: absolute; 
+    inset: 0; 
+    z-index: 3; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px 15px 30px 20px; 
+    background: rgba(0,0,0,.7); 
+    color: #fff; 
+    opacity: 0; 
+    transition: .5s ease; 
+}
+
+.hover-box {
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: linear-gradient( 120deg, #a30000, #630f0f, #240306, #8b0000, #420a0e ); 
+    background-size: 300% 300%; 
+    animation: gradientMove 8s ease infinite;
+    border: 1px solid #d10000;
+    color: white;
+    font-family: "Caudex", serif;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    overflow: auto;
+}
+
+@keyframes gradientMove { 
+    0% { 
+        background-position: 0% 50%; 
+    } 
+    50% { 
+        background-position: 100% 50%; 
+    } 
+    100% { 
+        background-position: 0% 50%; 
+    } 
+}
+
+.top-image-box {
+   width: 300px;
+   height: 150px;
+   left: 50%;
+   top: 20px;
+   background: url("") center / cover no-repeat;
+}
+
+.hover-text {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+    color: #fff;
+    text-align: left;
+    pointer-events: none;
+}
+
+.hover-title {
+    position: relative;
+    left: 10px;
+    top: 0;
+    margin-bottom: 0;
+    font-size: 70px !important;
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 8px !important;
+    color: #330000;
+    background: linear-gradient(to right, #e666ff, #c400cc, #880099, #2f021b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-template:hover .hover-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.special-font {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    color: #f9232c;
+    letter-spacing: 3px;
+}
+
+.special-font2 {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    text-shadow: 2px 2px 2px black;
+    color: #e666ff;
+}
+
+.hover-template:hover .hover-content {
+    opacity: 1;
+}
+
+.hover-template:hover .hover-image {
+    transform: scale(1.08);
+</style>
+</head>
+
+<body>
+
+<div class="hover-template">
+
+    <div class="hover-image"></div>
+
+<div class="hover-content">
+    <img class="hover-float" src="https://i.imgur.com/S1AqqH9.png" alt="">
+    <div class="hover-title">Demonetta</div>
+    <div class="hover-box">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+<p>
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+<p>
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+<p>
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+<p>
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+<p>
+<center><span class="special-font2">"my words are like teeth carved into flesh"</span></center>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
