@@ -58,7 +58,7 @@
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
-    background: linear-gradient( 120deg, #a30000, #630f0f, #240306, #8b0000, #420a0e ); 
+    background: linear-gradient( 120deg, #FF0000, #BC0202, #830000, #000000 ); 
     background-size: 300% 300%; 
     animation: gradientMove 8s ease infinite;
     border: 1px solid #d10000;
