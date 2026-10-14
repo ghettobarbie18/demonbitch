@@ -111,6 +111,11 @@
     margin-bottom: 0;
 
     width: 100%;
+    min-height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 
     font-size: 70px !important;
@@ -119,31 +124,24 @@
     font-style: normal;
     letter-spacing: 8px !important;
 
-    /* Image background */
     background-image: url("https://cdn.pixabay.com/photo/2017/02/13/21/07/background-2063797_1280.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size: 200% auto;
+    background-position: 0% center;
     background-repeat: no-repeat;
 
-    /* Center the text vertically */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* Text color */
     color: #ffffff;
     -webkit-text-fill-color: #ffffff;
 
-    min-height: 120px;
+    animation: titleImageMove 12s ease-in-out infinite alternate;
 }
 
 @keyframes titleImageMove {
-    from {
+    0% {
         background-position: 0% center;
     }
 
-    to {
-        background-position: 200% center;
+    100% {
+        background-position: 100% center;
     }
 }
 
