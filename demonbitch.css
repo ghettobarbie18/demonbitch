@@ -26,8 +26,8 @@
     transition: .5s ease;
     filter:
         drop-shadow(0 0 5px #F7374F)
-        drop-shadow(0 0 12px #88304E)
-        drop-shadow(0 0 25px #800000);
+        drop-shadow(0 0 5px #88304E)
+        drop-shadow(0 0 5px #800000);
 
     transition: filter .5s ease, transform .5s ease;
 }
@@ -61,7 +61,7 @@
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.6;
     text-align: justify;
     overflow: auto;
@@ -159,8 +159,8 @@
 .hover-template:hover .hover-image {
     transform: scale(1.08);
     filter:
-        drop-shadow(0 0 8px #ff667f)
-        drop-shadow(0 0 18px #F7374F)
-        drop-shadow(0 0 35px #88304E)
-        drop-shadow(0 0 50px #800000);
+        drop-shadow(0 0 5px #ff667f)
+        drop-shadow(0 0 5px #F7374F)
+        drop-shadow(0 0 5px #88304E)
+        drop-shadow(0 0 5px #800000);
 }
