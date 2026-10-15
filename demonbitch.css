@@ -155,7 +155,7 @@
     }
 }
 
-.demonhover-template:hover .hover-content {
+.demonhover-template:hover .demonhover-content {
     opacity: 1;
     pointer-events: auto;
 }
