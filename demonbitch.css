@@ -160,13 +160,10 @@
     pointer-events: auto;
 }
 
-.Kalnia-Glaze-font {
-    font-family: "Kalnia Glaze", serif;
-    font-optical-sizing: auto;
+.moon-dance-regular {
+    font-family: "Moon Dance", cursive;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
     font-size: 15px;
     text-shadow: 2px 2px 2px black;
     color: #e666ff;
