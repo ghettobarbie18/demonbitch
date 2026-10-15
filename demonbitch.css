@@ -1,4 +1,4 @@
-.hover-template {
+.demonhover-template {
     width: 500px;
     height: 490px;
     margin: 40px auto;
@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.hover-template::before {
+.demonhover-template::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -19,7 +19,7 @@
     10px 10px 10px rgba(0,0,0,.7);
 }
 
-.hover-image {
+.demonhover-image {
     width: 100%;
     height: 100%;
     background: url("https://raw.githubusercontent.com/ghettobarbie18/demonbitch/refs/heads/main/Katana_1.png") center / cover no-repeat;
@@ -32,7 +32,7 @@
     transition: filter .5s ease, transform .5s ease;
 }
 
-.hover-content { 
+.demonhover-content { 
     position: absolute; 
     inset: 0; 
     z-index: 3; 
@@ -47,9 +47,9 @@
     transition: .5s ease; 
 }
 
-.hover-box {
+.demonhover-box {
     width: 400px;
-    height: 500px;
+    height: 300px;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
@@ -79,7 +79,7 @@
     } 
 }
 
-.hover-text {
+.demonhover-text {
     position: absolute;
     inset: 0;
     z-index: 2;
@@ -93,10 +93,10 @@
     pointer-events: none;
 }
 
-.hover-title {
+.demonhover-title {
     position: relative;
-    left: 0;
-    top: -10px;
+    left: 50%;
+    top: -50px;
     margin-bottom: 0;
 
     width: 400px;
@@ -135,7 +135,7 @@
     }
 }
 
-.hover-template:hover .hover-content {
+.demonhover-template:hover .hover-content {
     opacity: 1;
     pointer-events: auto;
 }
@@ -152,11 +152,11 @@
     color: #e666ff;
 }
 
-.hover-template:hover .hover-content {
+.demonhover-template:hover .hover-content {
     opacity: 1;
 }
 
-.hover-template:hover .hover-image {
+.demonhover-template:hover .hover-image {
     transform: scale(1.08);
     filter:
         drop-shadow(0 0 5px #ff667f)
