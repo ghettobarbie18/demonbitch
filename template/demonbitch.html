@@ -46,39 +46,55 @@
     transition: filter .5s ease, transform .5s ease;
 }
 
-.demonhover-content { 
-    position: absolute; 
-    inset: 0; 
-    z-index: 3; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 15px 15px 30px 20px; 
-    background: rgba(0,0,0,.7); 
-    color: #fff; 
-    opacity: 0; 
-    transition: .5s ease; 
-}
+.demonhover-content {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    background: rgba(0,0,0,.7);
+    color: #fff;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s ease;
+}
+    
 .demonhover-box {
     width: 400px;
-    height: 300px;
+    height: 220px;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
-    background: linear-gradient( 120deg, #F7374F, #88304E, #522546, #2C2C2C ); 
-    background-size: 300% 300%; 
+
+    background: linear-gradient(
+        120deg,
+        #F7374F,
+        #88304E,
+        #522546,
+        #2C2C2C
+    );
+
+    background-size: 300% 300%;
     animation: gradientMove 8s ease infinite;
+
     border: 2px solid #2C2C2C;
     color: white;
+
     font-family: "Instrument Serif", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
     line-height: 1.6;
     text-align: justify;
-    overflow: auto;
 }
 
 @keyframes gradientMove { 
